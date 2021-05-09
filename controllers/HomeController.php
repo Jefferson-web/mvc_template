@@ -7,7 +7,8 @@ class HomeController extends Controller{
     }
 
     public function index(){
-        View::render('home/index');
+        $usuarios = array('Jefferson', 'Ledesma', 'Naupa');
+        View::render('home/index', $usuarios);
     }
 
 }
